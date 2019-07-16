@@ -79,7 +79,7 @@ class record {
         $array = (array) $this;
         return $array;
     }
-    public function createProperty($name = 'first', $value = 'keith') {
+    public function createProperty($name = 'cdatetime', $value = 'address') {
         $this->{$name} = $value;
     }
 }
