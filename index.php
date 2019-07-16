@@ -1,9 +1,32 @@
+
+<!-- call for HTML bootstrap style -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSV file to HTML table</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>1</title>
+    <!-- Bootstrap CSS and other repositories -->
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.csheros" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- https://www.phpclasses.org/browse/file/116204.html used this website for the jumbotron code underneath -->
+    <style>
+        .jumbotron{margin:5px auto;padding:5px 5px; width:1200px;
+    </style>
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <h3>CSV file to HTML table</h3>
+    <br/>
+
 <?php
 main::start("SacramentocrimeJanuary2006.csv");
 class main  {
     static public function start($filename) {
         $records = csv::getRecords($filename);
-        $table = html::generateTable($records);
+         html::generateTable($records);
     }
 }
 class html {
