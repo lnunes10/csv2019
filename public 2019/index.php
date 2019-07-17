@@ -76,6 +76,7 @@ class record {
         }
     }
     public function returnArray() {
+
         $array = (array) $this;
         return $array;
     }
